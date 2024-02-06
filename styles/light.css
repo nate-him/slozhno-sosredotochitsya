@@ -4,6 +4,14 @@
   переключая тему
 */
 
+:root {
+  --accent-color: #FF8DCB;
+  --bg-color: #FFF1F7;
+  --text-color: #353430;
+  --title-color: #FFC2E6;
+  --main-font: "IBM Plex mono";
+}
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
