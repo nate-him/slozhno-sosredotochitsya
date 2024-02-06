@@ -2,4 +2,27 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text-color);
+  font-family: var(--main-font);
 }
+
+.header {
+  position: relative;
+}
+
+.header__decor {
+  position: absolute;
+  font-size: 18px;
+  line-height: 25px;
+  top: 20px;
+  right: 48px;
+  text-transform: uppercase;
+}
+
+
