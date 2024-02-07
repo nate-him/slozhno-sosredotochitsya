@@ -9,7 +9,8 @@
   --bg-image: url(../images/cover-image-dark.png);
   --text-color: #F1B2CE;
   --title-color: #DB00FF;
+  --title-decor-color: #000028;
   --main-font: "IBM Plex mono", monospace;
   --text-size: 18px;
-  --main-padding: 10px;
+  --main-padding: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
 }
