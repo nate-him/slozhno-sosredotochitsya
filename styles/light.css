@@ -22,7 +22,6 @@
   --bg-color: #FFF1F7;
   --text-color: #353430;
   --title-color: #FFC2E6;
-  --main-font: "IBM Plex mono", monospace;
   --bg-image: url(../images/cover-image-light.png);
 }
 
@@ -32,7 +31,6 @@
     --bg-color: #FFF1F7;
     --text-color: #353430;
     --title-color: #FFC2E6;
-    --main-font: "IBM Plex mono", monospace;
     --bg-image: url(../images/cover-image-light.png); 
     }
 }
