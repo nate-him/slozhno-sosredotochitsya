@@ -259,7 +259,7 @@
     flex-direction: row;
   }
 
-  .main__section-card {
+  .row-column {
     grid-column: span 2;
   }
 
