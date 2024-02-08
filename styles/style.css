@@ -211,10 +211,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .main__section-card {
-    grid-column: span 2;
-  }
-
   .section-column {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
@@ -254,10 +250,6 @@
 }
 
 @media (width >= 1024px) {
-  .big-column {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -265,5 +257,13 @@
 
   .header__theme-menu-list {
     flex-direction: row;
+  }
+
+  .main__section-card {
+    grid-column: span 2;
+  }
+
+  .big-column {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
