@@ -89,7 +89,7 @@
 
   @media (width >= 1024px) {
     .header__title-accent,
-    .footer .header__title{
+    .footer .header__title {
       --accent-color: #FF0070;
     }
   }
