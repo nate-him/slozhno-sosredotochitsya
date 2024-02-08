@@ -11,6 +11,9 @@
   color: var(--text-color);
   font-family: var(--main-font);
   font-size: var(--text-size);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(40px, 10.6vi, 60px);
 }
 
 .header {
