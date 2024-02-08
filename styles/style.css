@@ -208,7 +208,7 @@
   }
 
   .section-row {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
   }
 
   .section-column {
@@ -257,6 +257,10 @@
 
   .header__theme-menu-list {
     flex-direction: row;
+  }
+
+  .section-row {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .row-column {
