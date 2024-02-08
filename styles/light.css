@@ -47,7 +47,7 @@
 
 @media (width >= 1024px) {
   .theme_light .header__title-accent,
-  .theme_light .footer .header__title{
+  .theme_light .footer .header__title {
     --accent-color: #FF0070;
   }
 }
@@ -65,28 +65,28 @@
   .header__theme-menu-list {
     color: var(--text-color);
   }
-  
+
   .header__theme-menu-button:hover {
     outline: 1px solid rgba(50, 49, 45, 0.4);
   }
-  
+
   .decorated-zone::before,
   .decorated-zone::after {
     --accent-color: var(--text-color);
   }
-  
+
   .header__decor {
     display: none;
   }
-  
+
   .title-decor {
     --title-decor-color: var(--text-color);
   }
-  
+
   .main__section-title {
     --accent-color: var(--text-color);
   }
-  
+
   @media (width >= 1024px) {
     .header__title-accent,
     .footer .header__title{
