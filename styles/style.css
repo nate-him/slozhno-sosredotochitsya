@@ -48,10 +48,6 @@
   pointer-events: none;
 }
 
-.header__theme-menu-button:hover { /*перенести в неон*/
-  outline: rgba(255, 0, 112, 0.4);
-}
-
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid currentColor;
 }
@@ -76,6 +72,7 @@
   background-color: var(--accent-color); 
   font-weight: 700;
   line-height: 1.3;
+  font-size: inherit;
 }
 
 .header__decor {
@@ -175,7 +172,9 @@
 
 .img {
   object-fit: cover;
+  object-position: center;
   inline-size: 100%;
+  block-size: 100%;
 }
 
 .footer {
@@ -188,4 +187,39 @@
 
 .footer .header__title {
   text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+/* @media (768px <= width < 1024px) {
+
+} */
+
+@media (width >= 768px) {
+  .main__gallery-picture {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "A A B"
+    "C D B"
+    "C E E";
+  }
+
+  .box-1 {
+    grid-area: A;
+  }
+  .box-2 {
+    grid-area: B;
+  }
+  .box-3 {
+    grid-area: C;
+  }
+  .box-4 {
+    grid-area: D;
+  }
+  .box-5 {
+    grid-area: E;
+  }
+}
+
+@media (width >= 1024px) {
+
 }

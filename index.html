@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light"> 
+    <meta name="color-scheme" content="dark light">
     <title>Сложно сосредоточиться</title>
-    <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/globals.css">
-    <link rel="stylesheet" href="./styles/variables.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/dark.css">
-    <link rel="stylesheet" href="./styles/light.css">
+    <link rel="icon" href="./images/favicon.ico" sizes="any"/>
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml"/>
+    <link rel="apple-touch-icon" href="./images/favicon.png"/>
+    <link rel="stylesheet" href="./fonts/fonts.css"/>
+    <link rel="stylesheet" href="./styles/globals.css"/>
+    <link rel="stylesheet" href="./styles/variables.css"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./styles/dark.css"/>
+    <link rel="stylesheet" href="./styles/light.css"/>
   </head>
   <body class="page theme_dark">
     <header class="header decorated-zone">
@@ -25,9 +25,9 @@
               День</button>
           </li>
           <li class="header__theme-menu-item">
-            <button
+            <button disabled
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled>
+              >
               Авто </button>
           </li>
           <li class="header__theme-menu-item">
@@ -37,7 +37,7 @@
           </li>
         </ul>
       </nav>
-      <h1 class="header__title">no focus</h1>
+      <h1 class="header__title header__title-accent">no focus</h1>
       <p class="header__subtitle title-decor"><span class="header__subtitle_block">Что делать, когда не можешь делать ничего</span>
       Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
       <div class="header__decor">rec</div>
@@ -108,27 +108,27 @@
       <section class="main__gallery">
         <h2 class="main__gallery-title title-decor">А можно в картинках?</h2>
         <div class="main__gallery-picture">
-          <picture>
+          <picture class="box-1">
             <source srcset="./images/sunset.avif" type="image/avif">
             <source srcset="./images/sunset.webp" type="image/webp">
             <img loading="lazy" class="img" src="./images/sunset.png" alt="Закат в горах у моря">
           </picture>
-          <picture>
+          <picture class="box-2">
             <source srcset="./images/ice-cream.avif" type="image/avif">
             <source srcset="./images/ice-cream.webp" type="image/webp">
             <img loading="lazy" class="img" src="./images/ice-cream.png" alt="Мультяшная тарелка десерта с мороженым">
           </picture>
-          <picture>
+          <picture class="box-3">
             <source srcset="./images/tape.avif" type="image/avif">
             <source srcset="./images/tape.webp" type="image/webp">
             <img loading="lazy" class="img" src="./images/tape.png" alt="Кассета с заставками музыкальных плееров">
           </picture>
-          <picture>
+          <picture class="box-4">
             <source srcset="./images/books.avif" type="image/avif">
             <source srcset="./images/books.webp" type="image/webp">
             <img loading="lazy" class="img" src="./images/books.png" alt="Стопка книг с чашкой кофе">
           </picture>
-          <picture>
+          <picture class="box-5">
             <source srcset="./images/street.avif" type="image/avif">
             <source srcset="./images/street.webp" type="image/webp">
             <img loading="lazy" class="img" src="./images/street.png" alt="Уличная дорога между домами">
