@@ -48,6 +48,14 @@
   pointer-events: none;
 }
 
+.header__theme-menu-button:hover { /*перенести в неон*/
+  outline: rgba(255, 0, 112, 0.4);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid currentColor;
+}
+
 .header__title {
   color: var(--title-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);

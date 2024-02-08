@@ -40,4 +40,17 @@ a {
   font-size: inherit;
   line-height: inherit;
   text-decoration: none;
+  outline: none;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+a:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+a:focus-visible { /*решить вопрос с обводкой*/
+  outline: 1px solid currentColor;
 }
