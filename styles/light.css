@@ -46,8 +46,7 @@
 }
 
 @media (width >= 1024px) {
-  .theme_light .header__title-accent,
-  .theme_light .footer .header__title {
+  .theme_light .title-accent {
     --accent-color: #FF0070;
   }
 }
@@ -88,8 +87,7 @@
   }
 
   @media (width >= 1024px) {
-    .header__title-accent,
-    .footer .header__title {
+    .title-accent {
       --accent-color: #FF0070;
     }
   }
