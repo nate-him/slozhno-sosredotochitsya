@@ -24,7 +24,7 @@
   }
   
   .header__theme-menu-button:hover {
-    outline: 1px solid rgba(255, 0, 112, 0.4);
+    border: 1px solid rgba(255, 0, 112, 0.4);
   }
 
   .decorated-zone::before,
