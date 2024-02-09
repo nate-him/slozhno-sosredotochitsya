@@ -48,8 +48,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
-
+  border: 1px solid var(--hover-border);
 }
 
 .header__theme-menu-button_active {
@@ -68,7 +67,7 @@
 }
 
 .header__title {
-  place-items: center / left;
+  place-self: center left;
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
@@ -152,8 +151,16 @@
   gap: 10px;
 }
 
-.card a {
+.link {
   text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.link:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.link:focus-visible {
+  outline: 1px solid currentColor;
 }
 
 .no-weight {
@@ -178,13 +185,12 @@
 
 .footer {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   height: 100vh;
 }
 
-.footer .title-accent {
+.footer__title {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 

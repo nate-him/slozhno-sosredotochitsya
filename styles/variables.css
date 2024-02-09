@@ -5,12 +5,13 @@
 
 :root {
   --accent-color: #FF0070;
+  --hover-border: rgba(255, 0, 112, 0.4);
   --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
   --text-color: #F1B2CE;
   --title-color: #DB00FF;
   --title-decor-color: #000028;
-  --main-font: "IBM Plex mono", monospace;
+  --main-font: "IBM Plex mono", Courier, monospace;
   --text-size: 18px;
   --indent: clamp(10px, 2.6vi, 20px);
 }

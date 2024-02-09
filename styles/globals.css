@@ -33,24 +33,27 @@ picture {
   padding: 0;
 }
 
-button,
-a {
-  outline: none;
+a,
+button {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  text-decoration: none;
+}
+
+a:focus,
+button:focus {
+  outline: none;
 }
 
 button:not(:disabled) {
   cursor: pointer;
 }
 
-a:hover {
-  border-bottom: 1px solid currentColor;
+button {
+  appearance: none;
 }
 
-a:focus-visible {
-  outline: 1px solid currentColor;
+a {
+  text-decoration: none;
 }
