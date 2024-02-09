@@ -97,7 +97,7 @@
   background-color: var(--accent-color);
   inset-block: 0.5rem;
   inset-inline-end: -1.2rem;
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  gallery__image-shadow: 0px 0px 4px 2px var(--accent-color);
 }
 
 .decorated-zone::after {
@@ -163,12 +163,12 @@
   gap: var(--indent);
 }
 
-.main__gallery-picture {
+.gallery__pictures {
   display: grid;
   gap: var(--indent);
 }
 
-.img {
+.image {
   display: block;
   object-fit: cover;
   object-position: center;
@@ -215,30 +215,30 @@
     grid-column: span 3;
   }
 
-  .main__gallery-picture {
+  .gallery__pictures {
     grid-template-areas: 
     "A A B"
     "C D B"
     "C E E";
   }
 
-  .box-1 {
+  .gallery__image-1 {
     grid-area: A;
   }
-  .box-2 {
+  .gallery__image-2 {
     grid-area: B;
   }
-  .box-3 {
+  .gallery__image-3 {
     grid-area: C;
   }
-  .box-4 {
+  .gallery__image-4 {
     grid-area: D;
   }
-  .box-5 {
+  .gallery__image-5 {
     grid-area: E;
   }
 
-  .img {
+  .image {
     block-size: 100%;
   }
 }
