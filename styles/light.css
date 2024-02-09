@@ -4,8 +4,13 @@
   переключая тему
 */
 
-:root .theme_light {
+.page.theme_light {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
   --accent-color: #ff8dcb;
+  --hover-border: rgba(50, 49, 45, 0.4);
   --bg-color: #fff1f7;
   --bg-image: url(../images/cover-image-light.png);
   --text-color: #353430;
@@ -13,56 +18,42 @@
   --title-decor-color: #fff1f7;
 }
 
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+.theme_light .header__theme-menu-list {
+  color: var(--text-color);
+}
 
-  @media (width >= 1024px) {
+.theme_light .header__theme-menu-button:hover {
+  --hover-border: rgba(50, 49, 45, 0.4);
+}
 
-    .title-accent {
-      --accent-color: #FF0070;
-    }
-  }
+.theme_light .decorated-zone::before,
+.theme_light .decorated-zone::after {
+  --accent-color: var(--text-color);
+}
 
-  .header__theme-menu-list {
-    color: var(--text-color);
-  }
+.theme_light .header__decor {
+  display: none;
+}
 
-  .header__theme-menu-button:hover {
-    outline: 1px solid rgba(50, 49, 45, 0.4);
-  }
+.theme_light .title-decor {
+  --title-decor-color: var(--text-color);
+}
 
-  .decorated-zone::before,
-  .decorated-zone::after {
-    --accent-color: var(--text-color);
-  }
+.theme_light .main__section-title {
+  --accent-color: var(--text-color);
+}
 
-  .header__decor {
-    display: none;
-  }
-
-  .title-decor {
-    --title-decor-color: var(--text-color);
-  }
-
-  .main__section-title {
-    --accent-color: var(--text-color);
+@media (width >= 1024px) {
+  .theme_light .title-accent {
+    --accent-color: #FF0070;
   }
 }
 
 @media (prefers-color-scheme: light) {
 
-  @media (width >= 1024px) {
-
-    .title-accent {
-      --accent-color: #FF0070;
-    }
-  }
-
   :root {
     --accent-color: #ff8dcb;
+    --hover-border: rgba(50, 49, 45, 0.4);
     --bg-color: #fff1f7;
     --bg-image: url(../images/cover-image-light.png);
     --text-color: #353430;
@@ -71,11 +62,11 @@
   }
 
   .header__theme-menu-list {
-    color: var(--text-color);
+    --accent-color: #353430;
   }
 
   .header__theme-menu-button:hover {
-    outline: 1px solid rgba(50, 49, 45, 0.4);
+    --hover-border: rgba(50, 49, 45, 0.4);
   }
 
   .decorated-zone::before,
@@ -93,5 +84,12 @@
 
   .main__section-title {
     --accent-color: var(--text-color);
+  }
+
+  @media (width >= 1024px) {
+
+    .title-accent {
+      --accent-color: #FF0070;
+    }
   }
 }
